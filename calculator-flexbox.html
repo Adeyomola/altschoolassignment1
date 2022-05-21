@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/Screenshot (13).png" type="image/png">
+    <link rel="stylesheet" href="./styles/calculator-flexbox.css">
+    <title>Flexbox Calculator</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./Index.html">Home</a>
+            <a href="./contact-page.html">Contact</a>
+            <a href="./Register.html">Register</a>
+            <a href="./Login.html">Login</a>
+            <div id="cdc">
+                <div id="cdc-icon">Calculators</div>
+                <div id="cdc-content">
+                    <a href="./calculator-table.html">Table Calculator</a>
+                    <a href="./calculator-flexbox.html">Flexbox Calculator</a>
+                    <a href="./calculator-grid.html">Grid Calculator</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="calculator-container">
+        <div id="input-container"><input type="text" name="" id="input-field" size="13" placeholder="0"></div>
+        <div class="button-container">
+            <input type="button" value="C" class="buttons" id="clear_button">
+            <input type="button" value="0" class="buttons">
+            <input type="button" value="1" class="buttons">
+            <input type="button" value="2" class="buttons">
+        </div>
+        <div class="button-container">
+            <input type="button" value="3" class="buttons">
+            <input type="button" value="4" class="buttons">
+            <input type="button" value="5" class="buttons">
+            <input type="button" value="6" class="buttons">
+        </div>
+        <div class="button-container">
+            <input type="button" value="7" class="buttons">
+            <input type="button" value="8" class="buttons">
+            <input type="button" value="9" class="buttons">
+            <input type="button" value="+" class="buttons">
+        </div>
+        <div class="button-container">
+            <input type="button" value="." class="buttons">
+            <input type="button" value="x²" class="buttons">
+            <input type="button" value="±" class="buttons">
+            <input type="button" value="-" class="buttons">
+        </div>
+        <div class="button-container-last">
+            <input type="button" value="÷" class="buttons">
+            <input type="button" value="*" class="buttons">
+            <input type="button" value="=" class="buttons" id="equals_sign">
+        </div>
+    </div>
+</body>
+
+</html>

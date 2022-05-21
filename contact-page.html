@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/contact-page.css">
+    <link rel="icon" href="./images/Me.png">
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./Index.html">Home</a>
+            <a href="./contact-page.html">Contact</a>
+            <a href="./Register.html">Register</a>
+            <a href="./Login.html">Login</a>
+            <div id="cdc">
+                <div id="cdc-icon">Calculators</div>
+                <div id="cdc-content">
+                    <a href="./calculator-table.html">Table Calculator</a>
+                    <a href="./calculator-flexbox.html">Flexbox Calculator</a>
+                    <a href="./calculator-grid.html">Grid Calculator</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <form class="contact-section" method="post">
+        <div id="contact-us">GET IN TOUCH</div>
+        <div><input type="text" id="name" placeholder="Full Name" required></div>
+        <div><input type="text" id="email" placeholder="Email Address" required></div>
+        <div><textarea name="Message" placeholder="Message..." id="message" required></textarea></div>
+        <div><select name="priority" id="priority-box" required>
+                <option value="">Select Priority</option>
+                <option value="low">Low</option>
+                <option value="normal">Normal</option>
+                <option value="hight">High</option>
+            </select>
+        </div>
+        <div id="submit-container">
+            <button id="submit">SEND</button>
+        </div>
+</body>
+
+</html>
