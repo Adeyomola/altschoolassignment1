@@ -29,7 +29,7 @@ nav a:hover,
   display: none;
   position: absolute;
   text-align: center;
-  right: 5px;
+  right: 10px;
   width: min-content;
 }
 #cdc-content a {
@@ -43,14 +43,18 @@ nav a:hover,
 #cdc:hover #cdc-content {
   display: block;
 }
+#hamburger-icon {
+  display: none;
+}
 .calculator-container {
   display: grid;
   grid-template-rows: auto repeat(4, auto) 50px;
   grid-template-columns: repeat(4, 1fr);
   margin: auto;
-  position: relative;
+  position: absolute;
   width: fit-content;
   top: 100px;
+  left: 550px;
   grid-gap: 20px 10px;
   padding: 16px;
   background-color: #000000;
@@ -100,4 +104,53 @@ nav a:hover,
 }
 #equals_sign:hover {
   background-color: rgba(131, 202, 253, 0.621);
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-image: url(/images/pexels-scott-webb-305821.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    float: right;
+    text-align: right;
+  }
+  #hamburger-icon {
+    display: block;
+    width: 10%;
+    float: right;
+  }
+  .navi-link {
+    display: none;
+    font-size: 10px;
+  }
+  nav:hover .navi-link {
+    display: block;
+    background-color: #7d7a7a;
+    color: #e9e8e4;
+    border-radius: 1mm;
+  }
+  #cdc-content {
+    right: 5px;
+    background-color: #7d7a7a;
+    border-radius: 1mm;
+  }
+  #cdc-content a {
+    display: block;
+    font-size: 9px;
+    color: #e9e8e4;
+  }
+  #cdc-icon {
+    color: #e9e8e4;
+  }
+  #cdc-icon:hover {
+    color: #e9e8e4;
+  }
+  .calculator-container {
+    top: 350px;
+    left: 30px;
+  }
 }

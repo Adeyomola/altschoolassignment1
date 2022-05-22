@@ -10,14 +10,17 @@ nav {
   position: relative;
   justify-content: flex-end;
 }
-nav a, #cdc-icon {
+nav a,
+#cdc-icon {
   text-decoration: none;
   padding: 10px 16px;
   color: #58894c;
   font-family: "lucida sans";
   font-weight: bold;
 }
-nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
+nav a:hover,
+#cdc-icon:hover,
+#cdc-content a:hover {
   text-decoration: underline;
   opacity: 0.8;
   color: black;
@@ -26,7 +29,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   display: none;
   position: absolute;
   text-align: center;
-  right: 5px;
+  right: 10px;
   width: min-content;
 }
 #cdc-content a {
@@ -40,6 +43,9 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 #cdc:hover #cdc-content {
   display: block;
 }
+#hamburger-icon {
+  display: none;
+}
 .login-div {
   display: flex;
   background-color: #58894c4b;
@@ -49,9 +55,9 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   padding: 50px;
   justify-content: space-between;
   align-items: center;
-  margin: auto;
-  position: relative;
-  top: 120px;
+  position: absolute;
+  top: 180px;
+  left: 550px;
   border-radius: 2mm;
   font-family: montserrat;
   font-size: 30px;
@@ -83,8 +89,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   font-weight: 600;
   text-decoration: none;
   color: black;
-  width:300px;
-  align-items: flex-start;
+  width: 300px;
   justify-content: space-between;
 }
 #forgot-password {
@@ -110,8 +115,103 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 /* adding hover background color change */
 #login:hover {
   background-color: #e9e8e48e;
+  cursor: pointer;
 }
 /* animating the login button */
 #login:active {
   transform: translateY(1px);
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-image: url(/images/pexels-scott-webb-305821.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    float: right;
+    text-align: right;
+  }
+  #hamburger-icon {
+    display: block;
+    width: 10%;
+    float: right;
+  }
+  .navi-link {
+    display: none;
+    font-size: 10px;
+  }
+  nav:hover .navi-link {
+    display: block;
+    background-color: #7d7a7a;
+    border-radius: 1mm;
+    color: #e9e8e4;
+  }
+  #cdc-content {
+    right: 2px;
+    background-color: #7d7a7a;
+    border-radius: 1mm;
+  }
+  #cdc-content a {
+    display: block;
+    font-size: 9px;
+    color: #e9e8e4;
+  }
+  #cdc-icon {
+    color: #e9e8e4;
+  }
+  #cdc-icon:hover {
+    color: #e9e8e4;
+  }
+  .login-div {
+    display: block;
+    width: 80%;
+    margin: auto;
+    padding: 15px;
+    top: 350px;
+    left: 40px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  #email {
+    width: 260px;
+    height: 30px;
+    border-radius: 2mm;
+    border: none;
+    font-family: montserrat;
+    text-indent: 5px;
+    font-size: 10px;
+  }
+  #password {
+    width: 260px;
+    height: 30px;
+    border-radius: 2mm;
+    border: none;
+    font-family: montserrat;
+    text-indent: 5px;
+    font-size: 10px;
+  }
+  #Remember-Me {
+    display: flex;
+    flex-direction: row;
+    font-size: small;
+    font-family: "zen maru gothic";
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    width: 260px;
+    padding: 10px 10px 10px 0;
+  }
+  #login {
+    font-family: montserrat;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 3mm;
+    border: none;
+    width: 100px;
+    height: 30px;
+    background-color: #e9e8e4;
+  }
 }

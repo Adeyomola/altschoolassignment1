@@ -10,14 +10,17 @@ nav {
   position: relative;
   justify-content: flex-end;
 }
-nav a, #cdc-icon {
+nav a,
+#cdc-icon {
   text-decoration: none;
   padding: 10px 16px;
   color: #58894c;
   font-family: "lucida sans";
   font-weight: bold;
 }
-nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
+nav a:hover,
+#cdc-icon:hover,
+#cdc-content a:hover {
   text-decoration: underline;
   opacity: 0.8;
   color: black;
@@ -26,7 +29,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   display: none;
   position: absolute;
   text-align: center;
-  right: 5px;
+  right: 10px;
   width: min-content;
 }
 #cdc-content a {
@@ -40,6 +43,9 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 #cdc:hover #cdc-content {
   display: block;
 }
+#hamburger-icon {
+  display: none;
+}
 #my-picture {
   position: absolute;
   left: 150px;
@@ -48,14 +54,14 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 }
 #my-picture img {
   border-radius: 10cm;
-  position: relative;
-  top: 140px;
+  position: absolute;
+  top: 100px;
 }
 .main-content {
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 320px;
+  top: 260px;
   left: 150px;
 }
 #main-content-header {
@@ -63,8 +69,8 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   font-family: montserrat;
 }
 #main-content-welcome {
-  position: relative;
-  bottom: 80px;
+  position: absolute;
+  top: 70px;
   font-size: 180%;
   font-family: "zen maru gothic";
   color: #58894c;
@@ -73,8 +79,9 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   display: flex;
   border-radius: 4mm;
   width: 1280px;
-  position: relative;
-  top: 480px;
+  position: absolute;
+  top: 520px;
+  left: 130px;
   margin: auto;
   justify-content: space-around;
 }
@@ -91,6 +98,9 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 #about-me-section:hover {
   background-color: #58894c7d;
   transform: translateY(2px);
+  font-size: 15px;
+  width: 220px;
+  height: 210px;
 }
 #my-goals {
   display: inline-block;
@@ -105,6 +115,9 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 #my-goals:hover {
   background-color: #58894c7d;
   transform: translateY(2px);
+  font-size: 15px;
+  width: 220px;
+  height: 210px;
 }
 #education {
   display: inline-block;
@@ -119,6 +132,9 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 #education:hover {
   background-color: #58894c7d;
   transform: translateY(2px);
+  font-size: 15px;
+  width: 220px;
+  height: 210px;
 }
 #job-experience {
   display: inline-block;
@@ -133,6 +149,9 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 #job-experience:hover {
   background-color: #58894ccc;
   transform: translateY(2px);
+  font-size: 15px;
+  width: 220px;
+  height: 210px;
 }
 #hobbies {
   display: inline-block;
@@ -147,6 +166,8 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 #hobbies:hover {
   background-color: #58894ccc;
   transform: translateY(2px);
+  font-size: 15px;
+  width: 220px;
 }
 .section-header {
   font-family: "Lucida Sans";
@@ -159,4 +180,126 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   font-size: 100%;
   position: relative;
   bottom: 25px;
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    background-image: url(/images/pexels-scott-webb-305821.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    float: right;
+    text-align: right;
+  }
+  #hamburger-icon {
+    display: block;
+    width: 10%;
+    float: right;
+  }
+  .navi-link {
+    display: none;
+    font-size: 10px;
+  }
+  nav:hover .navi-link {
+    display: block;
+    background-color: #7d7a7a;
+    border-radius: 1mm;
+    color: #e9e8e4;
+  }
+  #cdc-content {
+    right: 2px;
+    background-color: #7d7a7a;
+    border-radius: 1mm;
+  }
+  #cdc-content a {
+    display: block;
+    font-size: 9px;
+    color: #e9e8e4;
+  }
+  #cdc-icon {
+    color: #e9e8e4;
+  }
+  #cdc-icon:hover {
+    color: #e9e8e4;
+  }
+  #my-picture {
+    display: block;
+    width: 30%;
+    position: relative;
+    top: 30px;
+    left: 105px;
+  }
+  .main-content {
+    display: block;
+    width: 60%;
+    margin: auto;
+    top: 280px;
+    left: 82px;
+    text-align: center;
+  }
+  #main-content-header {
+    font-size: 130%;
+    font-family: montserrat;
+  }
+  #main-content-welcome {
+    position: relative;
+    top: -20px;
+    font-size: 110%;
+    font-family: "zen maru gothic";
+    color: #58894c;
+  }
+  .contents {
+    display: block;
+    width: 100%;
+    margin: auto;
+    left: 70px;
+    position: absolute;
+    top: 400px;
+  }
+  #about-me-section {
+    display: block;
+    margin-bottom: 10px;
+    width: 250px;
+  }
+  #my-goals {
+    display: block;
+    margin-bottom: 10px;
+    width: 250px;
+  }
+  #education {
+    display: block;
+    margin-bottom: 10px;
+    width: 250px;
+  }
+  #job-experience {
+    display: block;
+    margin-bottom: 10px;
+    width: 250px;
+    background-color: #58894c2c;
+  }
+  #hobbies {
+  display: block;
+  margin-bottom: 10px;
+  width: 250px;
+  background-color: #58894c2c;
+}
+#about-me-section:hover {
+  width: 270px;
+}
+#my-goals:hover {
+  width: 270px;
+}
+#education:hover {
+  width: 270px;
+}
+#job-experience:hover {
+  width: 270px;
+}
+#hobbies:hover {
+  width: 270px;
+}
 }

@@ -10,14 +10,17 @@ nav {
   position: relative;
   justify-content: flex-end;
 }
-nav a, #cdc-icon {
+nav a,
+#cdc-icon {
   text-decoration: none;
   padding: 10px 16px;
   color: #58894c;
   font-family: "lucida sans";
   font-weight: bold;
 }
-nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
+nav a:hover,
+#cdc-icon:hover,
+#cdc-content a:hover {
   text-decoration: underline;
   opacity: 0.8;
   color: black;
@@ -26,7 +29,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   display: none;
   position: absolute;
   text-align: center;
-  right: 5px;
+  right: 10px;
   width: min-content;
 }
 #cdc-content a {
@@ -40,6 +43,9 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 #cdc:hover #cdc-content {
   display: block;
 }
+#hamburger-icon {
+  display: none;
+}
 .register-me {
   display: flex;
   align-items: center;
@@ -47,12 +53,12 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   flex-direction: column;
   background-color: #58894c6f;
   padding: 50px;
-  margin: auto;
+  left: 550px;
   border-radius: 2mm;
   width: fit-content;
   height: 500px;
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 100px;
 }
 #register {
   font-family: montserrat;
@@ -65,7 +71,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   border: none;
   border-radius: 2mm;
   text-indent: 10px;
-  font-family: 'zen maru gothic';
+  font-family: "zen maru gothic";
 }
 #last-name {
   width: 400px;
@@ -73,7 +79,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   border: none;
   border-radius: 2mm;
   text-indent: 10px;
-  font-family: 'zen maru gothic';
+  font-family: "zen maru gothic";
 }
 #phone-number {
   width: 400px;
@@ -81,7 +87,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   border: none;
   border-radius: 2mm;
   text-indent: 10px;
-  font-family: 'zen maru gothic';
+  font-family: "zen maru gothic";
 }
 #gender {
   width: 404px;
@@ -89,7 +95,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   border: none;
   border-radius: 2mm;
   text-indent: 10px;
-  font-family: 'zen maru gothic';
+  font-family: "zen maru gothic";
 }
 #country {
   width: 404px;
@@ -97,7 +103,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   border: none;
   border-radius: 2mm;
   text-indent: 10px;
-  font-family: 'zen maru gothic';
+  font-family: "zen maru gothic";
 }
 #state {
   width: 400px;
@@ -105,7 +111,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   border: none;
   border-radius: 2mm;
   text-indent: 10px;
-  font-family: 'zen maru gothic';
+  font-family: "zen maru gothic";
 }
 #username {
   width: 400px;
@@ -113,7 +119,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   border: none;
   border-radius: 2mm;
   text-indent: 10px;
-  font-family: 'zen maru gothic';
+  font-family: "zen maru gothic";
 }
 #Password {
   width: 400px;
@@ -121,7 +127,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   border: none;
   border-radius: 2mm;
   text-indent: 10px;
-  font-family: 'zen maru gothic';
+  font-family: "zen maru gothic";
 }
 #Confirm-Password {
   width: 400px;
@@ -129,7 +135,7 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
   border: none;
   border-radius: 2mm;
   text-indent: 10px;
-  font-family: 'zen maru gothic';
+  font-family: "zen maru gothic";
 }
 #submit {
   width: 400px;
@@ -142,7 +148,143 @@ nav a:hover, #cdc-icon:hover, #cdc-content a:hover {
 }
 #submit:hover {
   background-color: #e9e8e488;
+  cursor: pointer;
 }
 #submit:active {
   transform: translateY(1px);
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-image: url(/images/pexels-scott-webb-305821.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    float: right;
+    text-align: right;
+  }
+  #hamburger-icon {
+    display: block;
+    width: 10%;
+    float: right;
+  }
+  .navi-link {
+    display: none;
+    font-size: 10px;
+  }
+  nav:hover .navi-link {
+    display: block;
+    background-color: #7d7a7a;
+    border-radius: 1mm;
+    color: #e9e8e4;
+  }
+  #cdc-content {
+    right: 2px;
+    background-color: #7d7a7a;
+    border-radius: 1mm;
+  }
+  #cdc-content a {
+    display: block;
+    font-size: 9px;
+    color: #e9e8e4;
+  }
+  #cdc-icon {
+    color: #e9e8e4;
+  }
+  #cdc-icon:hover {
+    color: #e9e8e4;
+  }
+  .register-me {
+    left: 40px;
+    top: 220px;
+  }
+  #register {
+    font-family: montserrat;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  #first-name {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 2mm;
+    text-indent: 10px;
+    font-family: "zen maru gothic";
+  }
+  #last-name {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 2mm;
+    text-indent: 10px;
+    font-family: "zen maru gothic";
+  }
+  #phone-number {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 2mm;
+    text-indent: 10px;
+    font-family: "zen maru gothic";
+  }
+  #gender {
+    width: 204px;
+    height: 30px;
+    border: none;
+    border-radius: 2mm;
+    text-indent: 10px;
+    font-family: "zen maru gothic";
+  }
+  #country {
+    width: 204px;
+    height: 30px;
+    border: none;
+    border-radius: 2mm;
+    text-indent: 10px;
+    font-family: "zen maru gothic";
+  }
+  #state {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 2mm;
+    text-indent: 10px;
+    font-family: "zen maru gothic";
+  }
+  #username {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 2mm;
+    text-indent: 10px;
+    font-family: "zen maru gothic";
+  }
+  #Password {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 2mm;
+    text-indent: 10px;
+    font-family: "zen maru gothic";
+  }
+  #Confirm-Password {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 2mm;
+    text-indent: 10px;
+    font-family: "zen maru gothic";
+  }
+  #submit {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 2mm;
+    background-color: #e9e8e4;
+    font-family: montserrat;
+    font-weight: bold;
+  }
 }
