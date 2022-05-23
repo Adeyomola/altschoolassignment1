@@ -121,7 +121,7 @@ nav a:hover,
 #login:active {
   transform: translateY(1px);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 920px) {
   body {
     background-image: url(/images/pexels-scott-webb-305821.jpg);
     background-size: auto;
@@ -130,13 +130,13 @@ nav a:hover,
   nav {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 20%;
     float: right;
     text-align: right;
   }
   #hamburger-icon {
     display: block;
-    width: 10%;
+    width: 40%;
     float: right;
   }
   .navi-link {
@@ -167,10 +167,10 @@ nav a:hover,
   }
   .login-div {
     display: block;
-    width: 80%;
+    width: fit-content;
     margin: auto;
     padding: 15px;
-    top: 350px;
+    top: 250px;
     left: 40px;
     box-sizing: border-box;
     text-align: center;

@@ -117,7 +117,7 @@ textarea[placeholder] {
 #submit:active {
   transform: translateY(2px);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 920px) {
   body {
     background-image: url(/images/pexels-scott-webb-305821.jpg);
     background-size: auto;
@@ -126,13 +126,13 @@ textarea[placeholder] {
   nav {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 20%;
     float: right;
     text-align: right;
   }
   #hamburger-icon {
     display: block;
-    width: 10%;
+    width: 40%;
     float: right;
   }
   .navi-link {
@@ -163,7 +163,7 @@ textarea[placeholder] {
   }
   .contact-section {
     left: 20px;
-    top: 220px;
+    top: 80px;
   }
   #contact-us {
     font-size: 20px;

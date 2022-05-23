@@ -182,7 +182,7 @@ nav a:hover,
   bottom: 25px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 920px) {
   body {
     background-image: url(/images/pexels-scott-webb-305821.jpg);
     background-size: auto;
@@ -191,13 +191,13 @@ nav a:hover,
   nav {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 20%;
     float: right;
     text-align: right;
   }
   #hamburger-icon {
     display: block;
-    width: 10%;
+    width: 40%;
     float: right;
   }
   .navi-link {
@@ -238,8 +238,8 @@ nav a:hover,
     width: 60%;
     margin: auto;
     top: 280px;
-    left: 82px;
-    text-align: center;
+    left: 80px;
+    text-align: left;
   }
   #main-content-header {
     font-size: 130%;
@@ -254,7 +254,7 @@ nav a:hover,
   }
   .contents {
     display: block;
-    width: 100%;
+    width: 50%;
     margin: auto;
     left: 70px;
     position: absolute;

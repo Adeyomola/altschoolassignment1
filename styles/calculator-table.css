@@ -98,7 +98,7 @@ th input[placeholder] {
 #equals_sign:hover {
   background-color: rgba(88, 185, 255, 0.621);
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 920px) {
   body {
     background-image: url(/images/pexels-scott-webb-305821.jpg);
     background-size: auto;
@@ -107,13 +107,13 @@ th input[placeholder] {
   nav {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 20%;
     float: right;
     text-align: right;
   }
   #hamburger-icon {
     display: block;
-    width: 10%;
+    width: 40%;
     float: right;
   }
   .navi-link {
