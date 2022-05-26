@@ -4,6 +4,7 @@ body {
   background-image: url(/images/pexels-scott-webb-305821.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 nav {
   display: flex;
@@ -164,7 +165,7 @@ nav a:hover,
     flex-direction: column;
     width: 20%;
     float: right;
-    text-align: right;
+    text-align: left;
   }
   #hamburger-icon {
     display: block;
@@ -180,9 +181,10 @@ nav a:hover,
     background-color: #7d7a7a;
     border-radius: 1mm;
     color: #e9e8e4;
+    z-index: 1;
   }
   #cdc-content {
-    right: 2px;
+    right: 0px;
     background-color: #7d7a7a;
     border-radius: 1mm;
   }
@@ -199,7 +201,7 @@ nav a:hover,
   }
   .register-me {
     left: 40px;
-    top: 120px;
+    top: 60px;
   }
   #register {
     font-family: montserrat;
