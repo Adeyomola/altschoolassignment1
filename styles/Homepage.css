@@ -1,24 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap");
+
+:root {
+  --bg-color: #58894c2c;
+  --bg-color-2: #58894c99;
+  --hover-color: #58894c7d;
+  --hover-font-size: 1.2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(/images/pexels-scott-webb-305821.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: 16px;
 }
+
 nav {
   display: flex;
-  position: relative;
+  width: 100%;
+  margin: 0 auto;
   justify-content: flex-end;
 }
+
 nav a,
 #cdc-icon {
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 14px 16px;
   color: #58894c;
   font-family: "lucida sans";
   font-weight: bold;
 }
+
 nav a:hover,
 #cdc-icon:hover,
 #cdc-content a:hover {
@@ -26,161 +45,172 @@ nav a:hover,
   opacity: 0.8;
   color: black;
 }
+
 #cdc-content {
   display: none;
   position: absolute;
   text-align: center;
-  right: 10px;
   width: min-content;
+  right: 10px;
 }
+
 #cdc-content a {
   display: block;
   font-size: small;
 }
+
 #cdc-content a:hover {
   background-color: rgba(187, 169, 169, 0.66);
   border-radius: 1mm;
 }
+
 #cdc:hover #cdc-content {
   display: block;
 }
+
 #hamburger-icon {
   display: none;
 }
+
 #my-picture {
-  position: absolute;
-  left: 150px;
-  top: 40px;
-  box-sizing: border-box;
+  width: 80%;
+  margin: 80px auto 0 auto;
 }
+
 #my-picture img {
   border-radius: 10cm;
-  position: absolute;
-  top: 100px;
 }
+
 .main-content {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 260px;
-  left: 150px;
+  width: 80%;
+  margin: 0 auto;
 }
+
 #main-content-header {
-  font-size: 320%;
+  font-size: 3em;
   font-family: montserrat;
 }
+
 #main-content-welcome {
-  position: absolute;
-  top: 70px;
-  font-size: 180%;
+  font-size: 1.5em;
   font-family: "zen maru gothic";
   color: #58894c;
 }
+
 .contents {
   display: flex;
   border-radius: 4mm;
-  width: 1280px;
-  position: absolute;
-  top: 520px;
-  left: 130px;
-  margin: auto;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 150px;
   justify-content: space-around;
 }
-#about-me-section {
-  display: inline-block;
-  background-color: #58894c2c;
-  padding: 20px;
-  box-sizing: border-box;
-  border-radius: 2mm;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-}
-#about-me-section:hover {
-  background-color: #58894c7d;
-  transform: translateY(2px);
-  font-size: 15px;
-  width: 220px;
-  height: 210px;
-}
-#my-goals {
-  display: inline-block;
-  background-color: #58894c2c;
-  padding: 20px;
-  border-radius: 2mm;
-  box-sizing: border-box;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-}
-#my-goals:hover {
-  background-color: #58894c7d;
-  transform: translateY(2px);
-  font-size: 15px;
-  width: 220px;
-  height: 210px;
-}
-#education {
-  display: inline-block;
-  background-color: #58894c2c;
-  padding: 20px;
-  border-radius: 2mm;
-  box-sizing: border-box;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-}
-#education:hover {
-  background-color: #58894c7d;
-  transform: translateY(2px);
-  font-size: 15px;
-  width: 220px;
-  height: 210px;
-}
-#job-experience {
-  display: inline-block;
-  background-color: #58894c84;
-  padding: 20px;
-  border-radius: 2mm;
-  box-sizing: border-box;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-}
-#job-experience:hover {
-  background-color: #58894ccc;
-  transform: translateY(2px);
-  font-size: 15px;
-  width: 220px;
-  height: 210px;
-}
-#hobbies {
-  display: inline-block;
-  background-color: #58894c84;
-  padding: 20px;
-  border-radius: 2mm;
-  box-sizing: border-box;
-  width: 200px;
-  height: 200px;
-  text-align: center;
-}
-#hobbies:hover {
-  background-color: #58894ccc;
-  transform: translateY(2px);
-  font-size: 15px;
-  width: 220px;
-}
+
 .section-header {
   font-family: "Lucida Sans";
-  position: relative;
-  bottom: 15px;
   text-decoration: underline;
 }
+
 .section-content {
   font-family: monospace;
-  font-size: 100%;
-  position: relative;
-  bottom: 25px;
+  font-size: 0.8em;
+  line-height: 130%;
+}
+
+#about-me-section {
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 2mm;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#about-me-section:hover {
+  background-color: var(--hover-color);
+  transform: translateY(2px);
+  font-size: var(--hover-font-size);
+  width: 220px;
+  height: 210px;
+}
+
+#my-goals {
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 2mm;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#my-goals:hover {
+  background-color: var(--hover-color);
+  transform: translateY(2px);
+  font-size: var(--hover-font-size);
+  width: 220px;
+  height: 210px;
+}
+
+#education {
+  background-color: var(--bg-color);
+  padding: 20px;
+  border-radius: 2mm;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#education:hover {
+  background-color: var(--hover-color);
+  transform: translateY(2px);
+  font-size: var(--hover-font-size);
+  width: 220px;
+  height: 210px;
+}
+
+#job-experience {
+  background-color: var(--bg-color-2);
+  padding: 20px;
+  border-radius: 2mm;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#job-experience:hover {
+  background-color: var(--hover-color);
+  transform: translateY(2px);
+  font-size: var(--hover-font-size);
+  width: 220px;
+  height: 210px;
+}
+
+#hobbies {
+  background-color: var(--bg-color-2);
+  padding: 20px;
+  border-radius: 2mm;
+  box-sizing: border-box;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#hobbies:hover {
+  background-color: var(--hover-color);
+  transform: translateY(2px);
+  font-size: var(--hover-font-size);
+  width: 220px;
+  height: 210px;
 }
 
 @media only screen and (max-width: 920px) {
@@ -188,23 +218,34 @@ nav a:hover,
     background-image: url(/images/pexels-scott-webb-305821.jpg);
     background-size: auto;
     background-repeat: no-repeat;
+    font-size: 10px;
   }
+
   nav {
     display: flex;
     flex-direction: column;
-    width: 20%;
-    float: right;
+    width: 50%;
     text-align: left;
+    align-items: end;
+    margin-left: 70%;
   }
+
+  nav a,
+  #cdc {
+    width: 50%;
+  }
+
   #hamburger-icon {
     display: block;
-    width: 40%;
-    float: right;
+    width: 30%;
+    margin-left: 70%;
   }
+
   .navi-link {
     display: none;
-    font-size: 10px;
+    font-size: 12px;
   }
+
   nav:hover .navi-link {
     display: block;
     background-color: #7d7a7a;
@@ -212,96 +253,65 @@ nav a:hover,
     color: #e9e8e4;
     z-index: 1;
   }
+
   #cdc-content {
-    right: 0px;
     background-color: #7d7a7a;
     border-radius: 1mm;
+    position: absolute;
+    right: -60px;
   }
+
   #cdc-content a {
     display: block;
     font-size: 9px;
     color: #e9e8e4;
   }
+
   #cdc-icon {
     color: #e9e8e4;
   }
+
   #cdc-icon:hover {
     color: #e9e8e4;
   }
+
   #my-picture {
-    display: block;
-    width: 30%;
-    position: relative;
-    top: 30px;
-    left: 105px;
+    margin-top: auto;
+    text-align: center;
+    margin-left: 20%;
   }
+
   .main-content {
-    display: block;
-    width: 60%;
-    margin: auto;
-    top: 280px;
-    left: 80px;
-    text-align: left;
+    text-align: center;
+    margin-left: 20%;
   }
-  #main-content-header {
-    font-size: 130%;
-    font-family: montserrat;
-  }
-  #main-content-welcome {
-    position: relative;
-    top: -20px;
-    font-size: 110%;
-    font-family: "zen maru gothic";
-    color: #58894c;
-  }
+
   .contents {
-    display: block;
-    width: 50%;
-    margin: auto;
-    left: 70px;
-    position: absolute;
-    top: 400px;
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 40px;
   }
+
+  .section-header {
+    font-size: small;
+  }
+
+  .section-content {
+    font-size: medium;
+  }
+
   #about-me-section {
-    display: block;
-    margin-bottom: 10px;
-    width: 250px;
+    background-color: var(--bg-color-2);
   }
+
   #my-goals {
-    display: block;
-    margin-bottom: 10px;
-    width: 250px;
+    background-color: var(--bg-color-2);
   }
+
   #education {
-    display: block;
-    margin-bottom: 10px;
-    width: 250px;
+    background-color: var(--bg-color-2);
   }
-  #job-experience {
-    display: block;
-    margin-bottom: 10px;
-    width: 250px;
-    background-color: #58894c2c;
-  }
-  #hobbies {
-  display: block;
-  margin-bottom: 10px;
-  width: 250px;
-  background-color: #58894c2c;
-}
-#about-me-section:hover {
-  width: 270px;
-}
-#my-goals:hover {
-  width: 270px;
-}
-#education:hover {
-  width: 270px;
-}
-#job-experience:hover {
-  width: 270px;
-}
-#hobbies:hover {
-  width: 270px;
-}
 }

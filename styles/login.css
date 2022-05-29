@@ -1,24 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap");
+
+:root {
+  --bg-color: #58894c2c;
+  --bg-color-2: #58894c99;
+  --hover-color: #58894c7d;
+  --hover-font-size: 1.2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(/images/pexels-scott-webb-305821.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: 16px;
 }
+
 nav {
   display: flex;
-  position: relative;
+  width: 100%;
+  margin: 0 auto;
   justify-content: flex-end;
 }
+
 nav a,
 #cdc-icon {
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 14px 16px;
   color: #58894c;
   font-family: "lucida sans";
   font-weight: bold;
 }
+
 nav a:hover,
 #cdc-icon:hover,
 #cdc-content a:hover {
@@ -26,124 +45,156 @@ nav a:hover,
   opacity: 0.8;
   color: black;
 }
+
 #cdc-content {
   display: none;
   position: absolute;
   text-align: center;
-  right: 10px;
   width: min-content;
+  right: 10px;
 }
+
 #cdc-content a {
   display: block;
   font-size: small;
 }
+
 #cdc-content a:hover {
   background-color: rgba(187, 169, 169, 0.66);
   border-radius: 1mm;
 }
+
 #cdc:hover #cdc-content {
   display: block;
 }
+
 #hamburger-icon {
   display: none;
 }
+
+.container {
+  width: 45%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 .login-div {
   display: flex;
   background-color: #58894c4b;
   flex-direction: column;
-  width: fit-content;
-  height: 230px;
-  padding: 50px;
+  width: 60%;
+  margin: 0 auto;
+  height: 250px;
+  padding: 15px;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: 180px;
-  left: 550px;
   border-radius: 2mm;
   font-family: montserrat;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
+  transform: translate(0, 50%);
 }
+
 #email {
-  width: 300px;
-  height: 30px;
+  width: 90%;
+  height: 15%;
+  padding: 10px;
   border-radius: 2mm;
   border: none;
   font-family: montserrat;
   text-indent: 5px;
   font-size: 10px;
 }
+
 #password {
-  width: 300px;
-  height: 30px;
+  width: 90%;
+  height: 15%;
+  padding: 10px;
   border-radius: 2mm;
   border: none;
   font-family: montserrat;
   text-indent: 5px;
   font-size: 10px;
 }
+
 #Remember-Me {
+  width: 80%;
   display: flex;
   flex-direction: row;
-  font-size: small;
+  font-size: 10px;
   font-family: "zen maru gothic";
   font-weight: 600;
   text-decoration: none;
   color: black;
-  width: 300px;
   justify-content: space-between;
 }
+
 #forgot-password {
-  font-size: small;
   font-family: "zen maru gothic";
   font-weight: 600;
   text-decoration: none;
   color: black;
 }
+
 #checkbox {
   height: 9px;
 }
+
 #login {
   font-family: montserrat;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: bold;
   border-radius: 3mm;
   border: none;
-  width: 150px;
-  height: 30px;
+  width: 30%;
+  height: 15%;
   background-color: #e9e8e4;
 }
+
 /* adding hover background color change */
 #login:hover {
   background-color: #e9e8e48e;
   cursor: pointer;
 }
+
 /* animating the login button */
 #login:active {
   transform: translateY(1px);
 }
-@media only screen and (max-width: 920px) {
+
+@media (max-width: 480px) {
   body {
     background-image: url(/images/pexels-scott-webb-305821.jpg);
     background-size: auto;
     background-repeat: no-repeat;
+    font-size: 10px;
   }
+
   nav {
     display: flex;
     flex-direction: column;
-    width: 20%;
-    float: right;
+    width: 50%;
     text-align: left;
+    align-items: end;
+    margin-left: 70%;
   }
+
+  nav a,
+  #cdc {
+    width: 50%;
+  }
+
   #hamburger-icon {
     display: block;
-    width: 40%;
-    float: right;
+    width: 30%;
+    margin-left: 70%;
   }
+
   .navi-link {
     display: none;
-    font-size: 10px;
+    font-size: 12px;
   }
+
   nav:hover .navi-link {
     display: block;
     background-color: #7d7a7a;
@@ -151,69 +202,106 @@ nav a:hover,
     color: #e9e8e4;
     z-index: 1;
   }
+
   #cdc-content {
-    right: 0px;
     background-color: #7d7a7a;
     border-radius: 1mm;
+    position: absolute;
+    right: -60px;
   }
+
   #cdc-content a {
     display: block;
     font-size: 9px;
     color: #e9e8e4;
   }
+
   #cdc-icon {
     color: #e9e8e4;
   }
+
   #cdc-icon:hover {
     color: #e9e8e4;
   }
+
+  .container {
+    width: 100%;
+    margin-left: 10%;
+  }
+
   .login-div {
-    display: block;
-    width: fit-content;
-    margin: auto;
-    padding: 15px;
-    top: 250px;
-    left: 40px;
-    box-sizing: border-box;
-    text-align: center;
+    width: 80%;
   }
-  #email {
-    width: 260px;
-    height: 30px;
-    border-radius: 2mm;
-    border: none;
-    font-family: montserrat;
-    text-indent: 5px;
+}
+
+@media (min-width: 481px) and (max-width: 920px) {
+  body {
+    background-image: url(/images/pexels-scott-webb-305821.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
     font-size: 10px;
   }
-  #password {
-    width: 260px;
-    height: 30px;
-    border-radius: 2mm;
-    border: none;
-    font-family: montserrat;
-    text-indent: 5px;
-    font-size: 10px;
-  }
-  #Remember-Me {
+
+  nav {
     display: flex;
-    flex-direction: row;
-    font-size: small;
-    font-family: "zen maru gothic";
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
-    width: 260px;
-    padding: 10px 10px 10px 0;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+    align-items: end;
+    margin-left: 70%;
   }
-  #login {
-    font-family: montserrat;
-    font-size: 13px;
-    font-weight: bold;
-    border-radius: 3mm;
-    border: none;
-    width: 100px;
-    height: 30px;
-    background-color: #e9e8e4;
+
+  nav a,
+  #cdc {
+    width: 50%;
+  }
+
+  #hamburger-icon {
+    display: block;
+    width: 30%;
+    margin-left: 70%;
+  }
+
+  .navi-link {
+    display: none;
+    font-size: 12px;
+  }
+
+  nav:hover .navi-link {
+    display: block;
+    background-color: #7d7a7a;
+    border-radius: 1mm;
+    color: #e9e8e4;
+    z-index: 1;
+  }
+
+  #cdc-content {
+    background-color: #7d7a7a;
+    border-radius: 1mm;
+    position: absolute;
+    right: -60px;
+  }
+
+  #cdc-content a {
+    display: block;
+    font-size: 9px;
+    color: #e9e8e4;
+  }
+
+  #cdc-icon {
+    color: #e9e8e4;
+  }
+
+  #cdc-icon:hover {
+    color: #e9e8e4;
+  }
+
+  .container {
+    width: 60%;
+    margin-left: 30%;
+  }
+
+  .login-div {
+    width: 80%;
   }
 }

@@ -1,24 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 @import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300&display=swap");
+
+:root {
+  --bg-color: #58894c2c;
+  --bg-color-2: #58894c99;
+  --hover-color: #58894c7d;
+  --hover-font-size: 1.2em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(/images/pexels-scott-webb-305821.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-size: 16px;
 }
+
 nav {
   display: flex;
-  position: relative;
+  width: 100%;
+  margin: 0 auto;
   justify-content: flex-end;
 }
+
 nav a,
 #cdc-icon {
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 14px 16px;
   color: #58894c;
   font-family: "lucida sans";
   font-weight: bold;
 }
+
 nav a:hover,
 #cdc-icon:hover,
 #cdc-content a:hover {
@@ -26,36 +45,41 @@ nav a:hover,
   opacity: 0.8;
   color: black;
 }
+
 #cdc-content {
   display: none;
   position: absolute;
   text-align: center;
-  right: 10px;
   width: min-content;
+  right: 10px;
 }
+
 #cdc-content a {
   display: block;
   font-size: small;
 }
+
 #cdc-content a:hover {
   background-color: rgba(187, 169, 169, 0.66);
   border-radius: 1mm;
 }
+
 #cdc:hover #cdc-content {
   display: block;
 }
+
 #hamburger-icon {
   display: none;
 }
+
 table {
   background-color: #58894c;
   text-align: center;
   border-spacing: 20px;
   border-radius: 4mm;
-  position: absolute;
-  top: 100px;
-  left: 550px;
+  margin: 0 auto;
 }
+
 th input {
   border-radius: 2mm;
   border: none;
@@ -64,10 +88,12 @@ th input {
   text-align: right;
   font-size: medium;
 }
+
 th input[placeholder] {
   text-align: right;
   font-size: 30px;
 }
+
 .buttons {
   width: 42px;
   height: 42px;
@@ -78,49 +104,67 @@ th input[placeholder] {
   font-family: monospace;
   font-size: 20px;
 }
+
 .buttons:hover {
   background-color: darkgrey;
   transform: translateY(-1px);
 }
+
 .buttons:active {
   transform: translateZ(2px);
 }
+
 #clear_button {
   background-color: red;
 }
+
 #clear_button:hover {
   background-color: rgba(88, 185, 255, 0.621);
 }
+
 #equals_sign {
   background-color: orange;
   height: 110px;
   width: 50px;
 }
+
 #equals_sign:hover {
   background-color: rgba(88, 185, 255, 0.621);
 }
-@media only screen and (max-width: 920px) {
+
+@media only screen and (max-width: 840px) {
   body {
     background-image: url(/images/pexels-scott-webb-305821.jpg);
     background-size: auto;
     background-repeat: no-repeat;
+    font-size: 10px;
   }
+
   nav {
     display: flex;
     flex-direction: column;
-    width: 20%;
-    float: right;
+    width: 50%;
     text-align: left;
+    align-items: end;
+    margin-left: 70%;
   }
+
+  nav a,
+  #cdc {
+    width: 50%;
+  }
+
   #hamburger-icon {
     display: block;
-    width: 40%;
-    float: right;
+    width: 30%;
+    margin-left: 70%;
   }
+
   .navi-link {
     display: none;
-    font-size: 10px;
+    font-size: 12px;
   }
+
   nav:hover .navi-link {
     display: block;
     background-color: #7d7a7a;
@@ -128,24 +172,25 @@ th input[placeholder] {
     color: #e9e8e4;
     z-index: 1;
   }
+
   #cdc-content {
-    right: 0px;
     background-color: #7d7a7a;
     border-radius: 1mm;
+    position: absolute;
+    right: -60px;
   }
+
   #cdc-content a {
     display: block;
     font-size: 9px;
     color: #e9e8e4;
   }
+
   #cdc-icon {
     color: #e9e8e4;
   }
+
   #cdc-icon:hover {
     color: #e9e8e4;
-  }
-  table {
-    left: 40px;
-    top: 120px;
   }
 }

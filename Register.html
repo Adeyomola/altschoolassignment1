@@ -27,18 +27,19 @@
         </a>
         </div>
     </nav>
-    <form class="register-me">
-        <div id="register">REGISTER</div>
-        <div id="first-name-container"><input type="text" placeholder="First Name" id="first-name" required></div>
-        <div><input type="text" placeholder="Last Name" id="last-name" required></div>
-        <div><input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required></div>
-        <div><select name="gender" id="gender" required>
+    <form>
+        <main class="register-me">
+            <p id="register">REGISTER</p>
+            <input type="text" placeholder="First Name" id="first-name" required>
+            <input type="text" placeholder="Last Name" id="last-name" required>
+            <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required>
+            <select name="gender" id="gender" required>
                 <option value="">Select Gender</option>
                 <option value="Male">Male</option>
                 <option value="Female">Female</option>
                 <option value="Others">Others</option>
-            </select></div>
-        <div><select id="country" name="country" required>
+            </select>
+            <select id="country" name="country" required>
                 <option>Select Country</option>
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Aland Islands</option>
@@ -292,13 +293,14 @@
                 <option value="YE">Yemen</option>
                 <option value="ZM">Zambia</option>
                 <option value="ZW">Zimbabwe</option>
-            </select></div>
-        <div><input type="text" placeholder="State/Province" id="state" required></div>
-        <div><input type="text" placeholder="Username" id="username" required></div>
-        <div><input type="password" name="Password" id="Password" placeholder="Password" required></div>
-        <div><input type="password" name="Confirm-Password" id="Confirm-Password" placeholder="Confirm Password"
-                required></div>
-        <div><button id="submit">SUBMIT</button></div>
+            </select>
+            <input type="text" placeholder="State/Province" id="state" required>
+            <input type="text" placeholder="Username" id="username" required>
+            <input type="password" name="Password" id="Password" placeholder="Password" required>
+            <input type="password" name="Confirm-Password" id="Confirm-Password" placeholder="Confirm Password"
+                required>
+            <button id="submit">SUBMIT</button>
+        </main>
     </form>
 </body>
 
